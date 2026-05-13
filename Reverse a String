@@ -1,0 +1,25 @@
+You are given a string s, and your task is to reverse the string.
+
+SOURCE CODE:
+
+class Solution {
+  public:
+    string reverseString(string& s) {
+      reverse(s.begin(),s.end());
+      return s;
+        
+    }
+};
+
+OUTPUT:
+
+Examples:
+
+Input: s = "Geeks"
+Output: "skeeG"
+
+Input: s = "for"
+Output: "rof"
+
+Input: s = "a"
+Output: "a"
