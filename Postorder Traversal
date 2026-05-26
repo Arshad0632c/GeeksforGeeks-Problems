@@ -1,0 +1,54 @@
+Given the root of a Binary Tree, your task is to return its Postorder Traversal.
+
+Note: A postorder traversal first visits the left child (including its entire subtree), 
+then visits the right child (including its entire subtree), and finally visits the node itself.
+
+SOURCE CODE:
+
+/*
+class Node {
+  public:
+    int data;
+    Node* left;
+    Node* right;
+
+    Node(int val) {
+        data = val;
+        left = NULL;
+        right = NULL;
+    }
+};
+*/
+
+class Solution {
+  public:
+  vector<int> ans;
+    void solve(Node* root){
+        if(root==NULL){
+            return;
+        }
+        solve(root->left);
+        solve(root->right);
+        ans.push_back(root->data);
+    }
+    vector<int> postOrder(Node* root) {
+        
+        solve(root);
+        return ans;
+        
+    }
+};
+
+OUTPUTS:
+
+Examples:
+
+Input: root = [19, 10, 8, 11, 13]
+
+Output: [11, 13, 10, 8, 19]
+Explanation: The postorder traversal of the given binary tree is [11, 13, 10, 8, 19].
+
+Input: root = [11, 15, N, 7]
+ 
+Output: [7, 15, 11]
+Explanation: The postorder traversal of the given binary tree is [7, 15, 11].
