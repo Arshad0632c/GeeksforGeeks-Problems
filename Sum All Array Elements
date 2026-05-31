@@ -1,0 +1,26 @@
+You are given an array of integers. Return the sum of all the array elements.
+
+SOURCE CODE:
+
+class Solution {
+  public:
+    int arraySum(vector<int>& arr) {
+        int sum=0;
+        for(int i=0;i<arr.size();i++){
+            sum=sum+arr[i];
+        }
+        return sum;
+    }
+};
+
+OUTPUTS:
+
+Examples:
+
+Input: arr[] = [54, 43, 2, 1, 5]
+Output: 105
+Explanation: Just sum it 54 + 43 + 2 + 1 + 5 = 105.
+
+Input: arr[] = [324, 5, 2, 2]
+Output: 333
+Explanation: Just sum it 324 + 5 + 2 + 2 = 333.
