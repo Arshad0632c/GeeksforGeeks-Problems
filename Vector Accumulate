@@ -1,0 +1,22 @@
+Given a vector arr[]. The task is to find the sum of all elements in the vector using the stl function accumulate().
+
+SOURCE CODE:
+
+class Solution {
+  public:
+    int vAccu(vector<int>& arr) {
+        int ans=accumulate(arr.begin(),arr.end(),0);
+        return ans;
+    }
+};
+
+
+OUTPUTS:
+
+Examples:
+
+Input: arr[] = [1, 2, 3, 4]
+Output: 10
+
+Input: arr[] = [3, 2, 1]
+Output: 6
