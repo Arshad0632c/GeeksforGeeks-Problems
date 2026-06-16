@@ -1,0 +1,32 @@
+Given two integers m and n, find all palindrome numbers between m and n (inclusive).
+
+
+SOURCE CODE:
+
+class Solution {
+  public:
+    vector<int> printPalindromes(int m, int n) {
+        vector<int> res;
+        for(int i=m;i<=n;i++){
+            string s=to_string(i);
+            string rev=s;
+            reverse(rev.begin(),rev.end());
+            if(s==rev){
+                res.push_back(i);
+            }
+        }
+        return res;
+    }
+};
+
+OUTPUTS:
+
+Examples:
+
+Input: m = 10, n = 115
+Output: [11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111]
+Explanation: The palindrome numbers in the range [10, 115] are 11, 22, 33, 44, 55, 66, 77, 88, 99, 101, and 111.
+
+Input: m = 2, n = 5
+Output: [2, 3, 4, 5]
+Explanation: All numbers in the range [2, 5] are palindrome numbers.
