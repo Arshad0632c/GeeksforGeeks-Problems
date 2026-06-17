@@ -1,0 +1,23 @@
+You are given two integers x and y, your task is to return the product of x and y.
+
+
+SOURCE CODE:
+
+class Solution {
+  public:
+    int product(int x, int y) {
+        return x*y;
+    }
+};
+
+OUTPUTS:
+
+Examples :
+
+Input: x = 5, y = 2
+Output: 10
+Explanation: Product of 5 and 2 is 10.
+
+Input: x = 100, y = 5
+Output: 500
+Explanation: Product of 100 and 5 is 500.
