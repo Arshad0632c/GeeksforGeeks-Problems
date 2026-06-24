@@ -1,0 +1,20 @@
+Given an array arr[] of integers, sort the array in descending order, driver code will print arr to verify the solution.
+
+SOURCE CODE:
+
+class Solution {
+  public:
+    void sortInDesc(vector<int>& arr) {
+        sort(arr.rbegin(),arr.rend());
+    }
+};
+
+OUTPUTS:
+
+Examples :
+
+Input: arr = [324, 5, 2, 2]
+Output: 324 5 2 2
+
+Input: arr = [54, 43, 2, 1, 5]
+Output: 54 43 5 2 1
